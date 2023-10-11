@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="">Select</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="in">India</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="fr">France</option>
+              
+            </select>
+
+            <label>Gender:</label>
+            <label>
+                <input type="checkbox" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="checkbox" name="gender" value="female"> Female
+            </label>
+            <label>
+                <input type="checkbox" name="gender" value="other"> Other
+            </label>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="reset-button">Reset</button>
+        </form>
+    </div>
+
+    <div class="popup" id="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Survey Form Submission</h2>
+            <div id="popup-results">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
